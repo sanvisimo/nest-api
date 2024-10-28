@@ -57,7 +57,8 @@ jobs:
 
       - name: Install chrome
         uses: browser-actions/setup-chrome@v1
-        run: chrome --version
+        with:
+          chrome-version: 130
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
