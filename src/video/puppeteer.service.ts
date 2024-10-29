@@ -183,7 +183,7 @@ ${inject.body || ''}
       );
 
       const name = `test_${frameNumber}.png`;
-      const tmpFile = path.join('/', 'app', 'puppeteer', name);
+      const tmpFile = path.join('/app/puppeteer', name);
 
       console.log('tmp', tmpFile);
 
