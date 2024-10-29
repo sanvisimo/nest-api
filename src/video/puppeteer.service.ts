@@ -11,7 +11,7 @@ import ROG_URL from './ROG_URL.json';
 
 // Enter your storage account name and shared key
 const account = process.env.AZURE_BLOB_ACCOUNT;
-const accountKey = process.env.AZURE_BLOB_KEY
+const accountKey = process.env.AZURE_BLOB_KEY;
 
 // Use StorageSharedKeyCredential with storage account and account key
 // StorageSharedKeyCredential is only available in Node.js runtime, not in browsers
@@ -183,7 +183,7 @@ ${inject.body || ''}
       );
 
       const name = `test_${frameNumber}.png`;
-      const tmpFile = path.join('app', 'puppeteer', name);
+      const tmpFile = path.join('/', 'app', 'puppeteer', name);
 
       console.log('tmp', tmpFile);
 
